@@ -11,6 +11,7 @@ experimental:
     branches:
       only:
         - main
+        - kong_api_gateway
 
 templates:
   job_template: &job_template

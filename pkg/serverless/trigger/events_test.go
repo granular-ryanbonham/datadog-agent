@@ -20,19 +20,20 @@ import (
 func TestEventPayloadParsing(t *testing.T) {
 	testDir := "./testData"
 	testCases := map[string]eventParseFunc{
-		"api-gateway-v1.json":            isAPIGatewayEvent,
-		"api-gateway-v2.json":            isAPIGatewayV2Event,
-		"application-load-balancer.json": isALBEvent,
-		"cloudwatch-events.json":         isCloudwatchEvent,
-		"cloudwatch-logs.json":           isCloudwatchLogsEvent,
-		"cloudfront.json":                isCloudFrontRequestEvent,
-		"dynamodb.json":                  isDynamoDBStreamEvent,
-		"eventbridge-custom.json":        isEventBridgeEvent,
-		"kinesis.json":                   isKinesisStreamEvent,
-		"s3.json":                        isS3Event,
-		"sns.json":                       isSNSEvent,
-		"sqs.json":                       isSQSEvent,
-		"lambdaurl.json":                 isLambdaFunctionURLEvent,
+		"api-gateway-v1.json":             isAPIGatewayEvent,
+		"kong-awsgateway-compatible.json": isAPIGatewayEvent,
+		"api-gateway-v2.json":             isAPIGatewayV2Event,
+		"application-load-balancer.json":  isALBEvent,
+		"cloudwatch-events.json":          isCloudwatchEvent,
+		"cloudwatch-logs.json":            isCloudwatchLogsEvent,
+		"cloudfront.json":                 isCloudFrontRequestEvent,
+		"dynamodb.json":                   isDynamoDBStreamEvent,
+		"eventbridge-custom.json":         isEventBridgeEvent,
+		"kinesis.json":                    isKinesisStreamEvent,
+		"s3.json":                         isS3Event,
+		"sns.json":                        isSNSEvent,
+		"sqs.json":                        isSQSEvent,
+		"lambdaurl.json":                  isLambdaFunctionURLEvent,
 	}
 	for testFile, testFunc := range testCases {
 		file, err := os.Open(fmt.Sprintf("%v/%v", testDir, testFile))

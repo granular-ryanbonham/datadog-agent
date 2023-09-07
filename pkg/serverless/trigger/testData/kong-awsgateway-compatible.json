@@ -1,0 +1,112 @@
+{
+  "id": "AgAAAYpr3__1GYaxswAAAAAAAAAYAAAAAEFZcHI0QUhNQUFEYTBkRTJSRVBNaEFCQgAAACQAAAAAMDE4YTZiZjktOWVhNC00M2UzLWJiYTItODZiZjk0MjM3MTI2",
+  "content": {
+    "timestamp": "2023-09-06T19:02:36.789Z",
+    "tags": [
+      "aws_account:100000000000"
+    ],
+    "host": "arn:aws:lambda:us-east-1:100000000000:function:example",
+    "service": "example",
+    "attributes": {
+      "headers": {
+        "x-datadog-sampling-priority": "1",
+        "x-forwarded-proto": "https",
+        "postman-token": "f42cee04-b71f-4500-8e81-84718e98a58f",
+        "x-forwarded-port": "443",
+        "x-datadog-trace-id": "7213945886082370186",
+        "x-forwarded-for": "170.54.93.145",
+        "accept": "*/*",
+        "x-datadog-parent-id": "8939817447597517602",
+        "x-amzn-trace-id": "Root=1-64f8cccb-279744ca7c908c417af780fe",
+        "my-asm-test-header": "acunetix-product",
+        "host": "us.dev.internal.api.granular.ag",
+        "accept-encoding": "gzip, deflate, br",
+        "user-agent": "PostmanRuntime/7.32.3"
+      },
+      "resource": "/api/example",
+      "body": "",
+      "httpMethod": "GET",
+      "network": {
+        "ip": {
+          "attributes": [
+            {
+              "ip": "0.0.1.215",
+              "source": [
+                "tags"
+              ]
+            },
+            {
+              "ip": "170.54.93.145",
+              "source": [
+                "@headers.x-forwarded-for",
+                "@multiValueHeaders.x-forwarded-for"
+              ]
+            },
+            {
+              "ip": "0.0.1.218",
+              "source": [
+                "tags"
+              ]
+            }
+          ],
+          "list": [
+            "0.0.1.215",
+            "170.54.93.145",
+            "0.0.1.218"
+          ]
+        }
+      },
+      "isBase64Encoded": true,
+      "path": "/api/example/system/ping",
+      "hostname": "arn:aws:lambda:us-east-1:100000000000:function:example",
+      "lambda": {
+        "arn": "arn:aws:lambda:us-east-1:100000000000:function:example",
+        "request_id": "6b8340c8-5a23-49f0-9e3c-f010cb5ec97f"
+      },
+      "multiValueHeaders": {
+        "x-datadog-sampling-priority": [
+          "1"
+        ],
+        "x-forwarded-proto": [
+          "https"
+        ],
+        "postman-token": [
+          "f42cee04-b71f-4500-8e81-84718e98a58f"
+        ],
+        "x-forwarded-port": [
+          "443"
+        ],
+        "x-datadog-trace-id": [
+          "7213945886082370186"
+        ],
+        "x-forwarded-for": [
+          "170.54.93.145"
+        ],
+        "accept": [
+          "*/*"
+        ],
+        "x-datadog-parent-id": [
+          "8939817447597517602"
+        ],
+        "x-amzn-trace-id": [
+          "Root=1-64f8cccb-279744ca7c908c417af780fe"
+        ],
+        "my-asm-test-header": [
+          "acunetix-product"
+        ],
+        "host": [
+          "example.com"
+        ],
+        "accept-encoding": [
+          "gzip, deflate, br"
+        ],
+        "user-agent": [
+          "PostmanRuntime/7.32.3"
+        ]
+      },
+      "service": "example",
+      "status": "info",
+      "timestamp": 1694026956789
+    }
+  }
+}

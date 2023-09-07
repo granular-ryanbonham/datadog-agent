@@ -19,7 +19,7 @@
         "x-datadog-parent-id": "8939817447597517602",
         "x-amzn-trace-id": "Root=1-64f8cccb-279744ca7c908c417af780fe",
         "my-asm-test-header": "acunetix-product",
-        "host": "us.dev.internal.api.granular.ag",
+        "host": "example.com",
         "accept-encoding": "gzip, deflate, br",
         "user-agent": "PostmanRuntime/7.32.3"
       },
